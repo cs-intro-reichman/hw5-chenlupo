@@ -4,7 +4,7 @@ public class MyStringTest {
             System.out.println("Please provide a specific test to run: countChar, subsetOf, spacedString, randomStringOfLetters, or remove.");
             return;
         }
-        // Run specific test based on argument
+        // Run specific§§ test based on argument
         switch (args[0]) {
             case "countChar": testCountChar(); break;
             case "subsetOf": testSubsetOf(); break;
