@@ -156,7 +156,8 @@ public class Scrabble {
 		////testCreateHands();  
 		////testPlayHands();
 		////playGame();
-		 System.out.println(createHand());
+		 //System.out.println(createHand());
+		 System.out.println(wordScore("running"));
 	}
 
 	public static void testBuildingTheDictionary() {

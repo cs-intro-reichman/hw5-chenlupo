@@ -12,6 +12,7 @@ public class MyString {
         System.out.println(subsetOf("sap","space"));
         System.out.println(randomStringOfLetters(3));
         System.out.println(remove(hello, "el"));
+        // System.out.println(subsetOf("runi", "running"));
 
     }
 
@@ -54,7 +55,10 @@ public class MyString {
         }
          
         for(int i = 0; i < str1.length(); i++){
-               if(countChar(str1,str1.charAt(i)) != countChar(str2,str1.charAt(i))){
+            char ch = str1.charAt(i);
+            int numOfChInStr1 = countChar(str1,str1.charAt(i));
+            int numOfChInStr2 = countChar(str2,str1.charAt(i));
+               if( numOfChInStr1 > numOfChInStr2){
                    return false;
                }
         }
