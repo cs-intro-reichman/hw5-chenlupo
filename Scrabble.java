@@ -118,16 +118,18 @@ public class Scrabble {
 			score+=wordScore(input);
 			hand = MyString.remove(hand, input);
 			System.out.println(input + " earned " + wordScore(input) + " points. Score: "+ score + " points");
+			System.out.println();
 		   }
-		  
+		   
+		}
 		if (hand.length() == 0) {
-	        System.out.println("Ran out of letters. Total score: " + score + " points");
+			System.out.println("Ran out of letters. Total score: " + score + " points");
 		} else {
 			System.out.println("End of hand. Total score: " + score + " points");
 		}
+		
 	}
-	}
-
+	
 	// Plays a Scrabble game. Prompts the user to enter 'n' for playing a new hand, or 'e'
 	// to end the game. If the user enters any other input, writes an error message.
 	public static void playGame() {
